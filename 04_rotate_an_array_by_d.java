@@ -27,6 +27,7 @@ class Solution{
         }
     }
 
+    //using reversal
     //time - O(n)
     //space - O(1)
     public static void rotatearrayusingreversal(int[] arr, int d){
