@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 //O(nlogn) time
 class Solution {
     public int getSecondLargest(int[] arr) {
@@ -8,27 +11,6 @@ class Solution {
             if(arr[n-2]!=arr[n-1]) return arr[i];
         }
         return -1;
-    }
-}
-
-
-//O(n) time
-class Solution {
-    public int getSecondLargest(int[] arr) {
-        // Code Here
-        int n = arr.length;
-        int largest = -1, secondlargest = -1;
-        for(int i =0 ;i<n;i++){
-            if(arr[i]>largest){
-                largest=arr[i];
-            }
-        }
-        for(int i =0;i<n;i++){
-            if(arr[i]>secondlargest && arr[i]!=largest){
-                secondlargest=arr[i];
-            }
-        }
-        return secondlargest;
     }
 }
 
