@@ -10,7 +10,7 @@ class Solution{
             temp[i] = arr[n-1-i];
         }
         for(int i = 0; i<n;i++){
-            arr[i] = arr[i];
+            arr[i] = temp[i];
         }
     }
 
