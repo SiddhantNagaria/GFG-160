@@ -33,9 +33,9 @@ class Solution{
     public static void rotatearrayusingreversal(int[] arr, int d){
         int n = arr.length;
         d%=n;
-        reversearray(arr,0,n-1);
         reversearray(arr,0,d-1);
         reversearray(arr,d,n-1);
+        reversearray(arr,0,n-1);
     }
     public static void reversearray(int[] arr, int start, int end){
         while(start<end){
